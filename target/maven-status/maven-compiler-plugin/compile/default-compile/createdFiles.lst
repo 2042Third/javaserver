@@ -1,6 +1,9 @@
-javaserver\chat\closed\Users.class
+javaserver\chat\opens\OpenUsers.class
+javaserver\chat\closed\CloseUsers.class
+javaserver\chat\messages\ChatMsg.class
+javaserver\chat\Chat.class
+javaserver\chat\messages\AllMsg.class
+javaserver\chat\messages\Messages.class
 javaserver\chat\opens\Opens.class
 javaserver\chat\ChatMarshaller.class
 javaserver\chat\closed\Closed.class
-javaserver\chat\Chat.class
-javaserver\chat\opens\Users.class

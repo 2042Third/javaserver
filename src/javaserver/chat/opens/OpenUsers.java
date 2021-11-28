@@ -5,9 +5,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name = "user")
+@XmlRootElement(name = "closeuser")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Users {
+public class OpenUsers {
 	private String time; // server time
 	private String uhash; // user name hash
 

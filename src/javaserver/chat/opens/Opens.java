@@ -19,17 +19,17 @@ import java.time.LocalDateTime;
 @XmlRootElement(name = "opens")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Opens {
-  @XmlElement(name = "user")
-  private List<Users> users = new ArrayList<Users>();
+  @XmlElement(name = "openuser")
+  private List<OpenUsers> users = new ArrayList<OpenUsers>();
 
-  public void add(Users a){
+  public void add(OpenUsers a){
     users.add(a);
   }
 
-  public Users new_user(String uh){
+  public OpenUsers new_user(String uh){
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
     LocalDateTime now = LocalDateTime.now();
-    Users a = new Users();
+    OpenUsers a = new OpenUsers();
     a.setUsers(dtf.format(now),uh);
     return a;
   }

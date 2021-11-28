@@ -22,14 +22,14 @@ import java.time.LocalDateTime;
 @XmlRootElement(name = "closed")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Closed {
-  @XmlElement(name = "user")
-  private List<Users> users = new ArrayList<Users>();
+  @XmlElement(name = "closeuser")
+  private List<CloseUsers> users = new ArrayList<CloseUsers>();
 
 
   /**
    * Adds new users.
    * */
-  public void add(Users a){
+  public void add(CloseUsers a){
     users.add(a);
   }
   /**
@@ -37,11 +37,14 @@ public class Closed {
    * @param ph p2p hash
    * 
    * */
-  public Users new_user(String uh, String ph){
+  public CloseUsers new_user(String uh, String ph){
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
     LocalDateTime now = LocalDateTime.now();
-    Users a = new Users();
+    CloseUsers a = new CloseUsers();
     a.setUsers(dtf.format(now),uh,ph);
     return a;
   }
+
 }
+
+

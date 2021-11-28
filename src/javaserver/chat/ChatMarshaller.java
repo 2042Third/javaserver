@@ -19,6 +19,13 @@ public class ChatMarshaller {
     a.new_open("users_hash1");
     a.new_open("users_hash2");
     a.new_open("users_hash3");
+    a.new_close("users_hash1","p2pusers_hash1");
+    a.new_close("users_hash2","p2pusers_hash2");
+    a.new_close("users_hash3","p2pusers_hash3");
+    a.new_msg("p2pusers_hash3","msghash6","this is a msg that reads something like this 123412341234","users_hash3");
+    a.new_msg("p2pusers_hash1","msghash1","this is a msg that reads something like this 123412341234","users_hash3");
+    a.new_msg("p2pusers_hash2","msghash34","this is a msg that reads something like this 123412341234","users_hash3");
+    a.new_msg("p2pusers_hash5","msghash2","this is a msg that reads something like this 123412341234","users_hash3");
     
     JAXBContext jaxbContext = JAXBContext.newInstance(Chat.class);
     Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
