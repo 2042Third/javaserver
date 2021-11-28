@@ -1,0 +1,1 @@
+java -cp target/chat-0.0.1-SNAPSHOT.jar;libs/*;. javaserver.chat.Main

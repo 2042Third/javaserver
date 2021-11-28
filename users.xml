@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chat>
+    <opens>
+        <user>
+            <time>2021/11/28 13:02:57</time>
+            <uhash>users_hash1</uhash>
+        </user>
+        <user>
+            <time>2021/11/28 13:02:57</time>
+            <uhash>users_hash2</uhash>
+        </user>
+        <user>
+            <time>2021/11/28 13:02:57</time>
+            <uhash>users_hash3</uhash>
+        </user>
+    </opens>
+</chat>
