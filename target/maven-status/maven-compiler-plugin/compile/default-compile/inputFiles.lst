@@ -1,6 +1,9 @@
 C:\Users\18604\Desktop\net\test_bed\chat\src\javaserver\chat\ChatMarshaller.java
 C:\Users\18604\Desktop\net\test_bed\chat\src\javaserver\chat\closed\Closed.java
+C:\Users\18604\Desktop\net\test_bed\chat\src\javaserver\chat\opens\OpenUsers.java
 C:\Users\18604\Desktop\net\test_bed\chat\src\javaserver\chat\Chat.java
-C:\Users\18604\Desktop\net\test_bed\chat\src\javaserver\chat\closed\Users.java
+C:\Users\18604\Desktop\net\test_bed\chat\src\javaserver\chat\messages\ChatMsg.java
+C:\Users\18604\Desktop\net\test_bed\chat\src\javaserver\chat\messages\Messages.java
+C:\Users\18604\Desktop\net\test_bed\chat\src\javaserver\chat\closed\CloseUsers.java
+C:\Users\18604\Desktop\net\test_bed\chat\src\javaserver\chat\messages\AllMsg.java
 C:\Users\18604\Desktop\net\test_bed\chat\src\javaserver\chat\opens\Opens.java
-C:\Users\18604\Desktop\net\test_bed\chat\src\javaserver\chat\opens\Users.java

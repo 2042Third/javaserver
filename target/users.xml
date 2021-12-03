@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chat>
+    <opens>
+        <openuser>
+            <time>2021/12/03 12:58:26</time>
+            <uhash>users_hash1</uhash>
+        </openuser>
+        <openuser>
+            <time>2021/12/03 12:58:26</time>
+            <uhash>users_hash2</uhash>
+        </openuser>
+        <openuser>
+            <time>2021/12/03 12:58:26</time>
+            <uhash>users_hash3</uhash>
+        </openuser>
+    </opens>
+    <closed>
+        <closeuser>
+            <time>2021/12/03 12:58:26</time>
+            <p2phash>p2pusers_hash1</p2phash>
+            <uhash>users_hash1</uhash>
+        </closeuser>
+        <closeuser>
+            <time>2021/12/03 12:58:26</time>
+            <p2phash>p2pusers_hash2</p2phash>
+            <uhash>users_hash2</uhash>
+        </closeuser>
+        <closeuser>
+            <time>2021/12/03 12:58:26</time>
+            <p2phash>p2pusers_hash3</p2phash>
+            <uhash>users_hash3</uhash>
+        </closeuser>
+    </closed>
+    <allmsgs/>
+</chat>

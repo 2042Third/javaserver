@@ -37,6 +37,18 @@ public class Chat {
   @XmlElement(name = "allmsgs")
   private AllMsg all_msg= new AllMsg();
   
+  /**
+   * Removes the user from the list of open users.
+   * */
+  public Boolean remove_open_user(String uh){
+    return opens.remove_user(uh);
+  }
+  /**
+   * Removes the user from the list of closed users.
+   * */
+  public Boolean remove_closed_user(String uh){
+    return close.remove_user(uh);
+  }
 
   public void new_msg(String senders, String a, String b, String c){
     all_msg.set_msg(senders,a,b,c);

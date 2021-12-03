@@ -27,6 +27,30 @@ public class Closed {
 
 
   /**
+   * Removes the starter user, if not found tries to remove one from p2p
+   * list if match.
+   * */
+  public Boolean remove_user(String uh){
+    for (int i=0; i<users.size();i++){
+      if(users.get(i).is_user(uh)){
+        users.remove(i);
+        return true;
+      }
+    }
+    return remove_p2p(uh);
+  } 
+
+  public Boolean remove_p2p(String p2p){
+    for (int i=0; i<users.size();i++){
+      if(users.get(i).is_p2p(p2p)){
+        users.remove(i);
+        return true;
+      }
+    }
+    return false;
+  } 
+
+  /**
    * Adds new users.
    * */
   public void add(CloseUsers a){

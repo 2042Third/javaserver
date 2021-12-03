@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name = "closeuser")
+@XmlRootElement(name = "openuser")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class OpenUsers {
 	private String time; // server time
@@ -14,5 +14,12 @@ public class OpenUsers {
   public void setUsers (String tm, String uh){
     this.time = tm;
     this.uhash = uh;
+  }
+
+  /**
+   * Checks if the user is the input user.
+   * */
+  public Boolean is_user(String uh){
+    return uhash.equals(uh);
   }
 }

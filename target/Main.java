@@ -5,6 +5,12 @@ public  class Main {
    public static void  main(String[] args) throws JAXBException
     {
         ChatMarshaller a = new ChatMarshaller();
-        a.test();
+        // a.test();
+        try{
+         a.reader_test();
+        }
+        catch(Exception e){
+         System.out.println("Test failure!");
+        }
     }
 }

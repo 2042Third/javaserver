@@ -26,6 +26,16 @@ public class Opens {
     users.add(a);
   }
 
+  public Boolean remove_user(String uh){
+    for (int i=0; i<users.size();i++){
+      if(users.get(i).is_user(uh)){
+        users.remove(i);
+        return true;
+      }
+    }
+    return false;
+  }
+
   public OpenUsers new_user(String uh){
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
     LocalDateTime now = LocalDateTime.now();
