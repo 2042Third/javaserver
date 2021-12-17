@@ -36,11 +36,11 @@ public class Opens {
     return false;
   }
 
-  public OpenUsers new_user(String uh){
+  public OpenUsers new_user(String uh, String sid){
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
     LocalDateTime now = LocalDateTime.now();
     OpenUsers a = new OpenUsers();
-    a.setUsers(dtf.format(now),uh);
+    a.setUsers(dtf.format(now),uh, sid);
     return a;
   }
 }

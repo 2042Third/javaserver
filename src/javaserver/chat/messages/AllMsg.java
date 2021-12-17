@@ -47,7 +47,7 @@ public class AllMsg {
   public void new_msg(String senders,String a, String b, String c){
     for(int i=0; i<p2p_msgs.size();i++){
       if(p2p_msgs.get(i).get_senders().equals(senders)){
-        p2p_msgs.get(i).add_msg(a,b,c);
+        p2p_msgs.get(i).add_msg(senders, a,b,c);
         return;
       }
     }

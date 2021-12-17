@@ -26,6 +26,7 @@ public class Closed {
   private List<CloseUsers> users = new ArrayList<CloseUsers>();
 
 
+
   /**
    * Removes the starter user, if not found tries to remove one from p2p
    * list if match.
@@ -61,11 +62,11 @@ public class Closed {
    * @param ph p2p hash
    * 
    * */
-  public CloseUsers new_user(String uh, String ph){
+  public CloseUsers new_user(String uh, String ph, String sid){
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
     LocalDateTime now = LocalDateTime.now();
     CloseUsers a = new CloseUsers();
-    a.setUsers(dtf.format(now),uh,ph);
+    a.setUsers(dtf.format(now),uh,ph, sid);
     return a;
   }
 

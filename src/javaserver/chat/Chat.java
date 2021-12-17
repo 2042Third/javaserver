@@ -22,15 +22,15 @@ public class Chat {
   @XmlElement(name = "opens")
   private Opens opens = new Opens();
   
-  public void new_open(String uh){
-    opens.add(opens.new_user(uh));
+  public void new_open(String uh, String sid){
+    opens.add(opens.new_user(uh, sid));
   }
 
   @XmlElement(name = "closed")
   private Closed close = new Closed();
   
-  public void new_close(String uh,String ph){
-    close.add(close.new_user(uh,ph));
+  public void new_close(String uh,String ph, String sid){
+    close.add(close.new_user(uh,ph,sid));
   }
 
 
@@ -50,8 +50,9 @@ public class Chat {
     return close.remove_user(uh);
   }
 
-  public void new_msg(String senders, String a, String b, String c){
-    all_msg.set_msg(senders,a,b,c);
+
+  public void new_msg(String senders, String msghash, String msg, String msgsender){
+    all_msg.set_msg(senders,msghash,msg,msgsender);
   }
 
 }

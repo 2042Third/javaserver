@@ -9,11 +9,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class OpenUsers {
 	private String time; // server time
-	private String uhash; // user name hash
+  private String uhash; // user name hash
+	private String sock_id; // user socket id
 
-  public void setUsers (String tm, String uh){
+  public void setUsers (String tm, String uh, String sid){
     this.time = tm;
     this.uhash = uh;
+    this.sock_id = sid;
   }
 
   /**

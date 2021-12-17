@@ -19,12 +19,12 @@ public class ChatMarshaller {
     System.out.println("///////////// MARSHAL TEST (before remove)/////////////////");
 
     Chat a= new Chat();
-    a.new_open("users_hash1");
-    a.new_open("users_hash2");
-    a.new_open("users_hash3");
-    a.new_close("users_hash1","p2pusers_hash1");
-    a.new_close("users_hash2","p2pusers_hash2");
-    a.new_close("users_hash3","p2pusers_hash3");
+    a.new_open("users_hash1", "users_hash1_sid");
+    a.new_open("users_hash2", "users_hash2_sid");
+    a.new_open("users_hash3", "users_hash3_sid");
+    a.new_close("users_hash1","p2pusers_hash1", "users_hash1_sid");
+    a.new_close("users_hash2","p2pusers_hash2", "users_hash2_sid");
+    a.new_close("users_hash3","p2pusers_hash3", "users_hash3_sid");
     
     JAXBContext jaxbContext = JAXBContext.newInstance(Chat.class);
     Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
@@ -56,12 +56,13 @@ public class ChatMarshaller {
   public static void reader_test() throws JAXBException,FileNotFoundException { 
     Chat a= new Chat();
     String locat_file = "C:\\Users\\18604\\Desktop\\net\\test_bed\\chat\\target\\user.xml";
-    a.new_open("users_hash1");
-    a.new_open("users_hash2");
-    a.new_open("users_hash3");
-    a.new_close("users_hash1","p2pusers_hash1");
-    a.new_close("users_hash2","p2pusers_hash2");
-    a.new_close("users_hash3","p2pusers_hash3");
+    a.new_open("users_hash1", "users_hash1_sid");
+    a.new_open("users_hash2", "users_hash2_sid");
+    a.new_open("users_hash3", "users_hash3_sid");
+    a.new_close("users_hash1","p2pusers_hash1", "users_hash1_sid");
+    a.new_close("users_hash2","p2pusers_hash2", "users_hash2_sid");
+    a.new_close("users_hash3","p2pusers_hash3", "users_hash3_sid");
+    a.new_msg("users_hash1","msg_hash","this is a encrypted comunication, and my secret is 1234.", "users_hash2");
     create_marshall(a,locat_file );
     System.out.println("///////////// FIRST MARSHAL /////////////////");
     print_marshall(a);

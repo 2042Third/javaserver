@@ -40,9 +40,9 @@ public class ChatMsg {
   /**
    * Adde one new msg
    * */
-  public void add_msg(String a, String b, String c){
+  public void add_msg(String senders,String a, String b, String c){
     Messages nm = new Messages();
-    nm.set_msg(a,b,c);
+    nm.set_msg(senders,a,b,c);
     msgs.add(nm);
   }
 }

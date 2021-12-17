@@ -12,6 +12,7 @@ public class CloseUsers {
   private String time; // server time
   private String p2phash; // peer to peer hash
   private String uhash; // user name hash (this is the server opener)
+  private String sock_id; // user socket id
 
   public Boolean  is_user(String uh){
     return uhash.equals(uh);
@@ -20,9 +21,10 @@ public class CloseUsers {
     return p2phash.equals(p2ph);
   }
 
-  public void setUsers (String tm, String uh, String ph){
+  public void setUsers (String tm, String uh, String ph,String sid){
     this.time = tm;
     this.uhash = uh;
     this.p2phash=ph;
+    this.sock_id=sid;
   }
 }

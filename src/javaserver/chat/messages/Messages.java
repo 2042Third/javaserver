@@ -26,18 +26,21 @@ public class Messages {
   private String time ;
   @XmlElement(name = "sender")
   private String sender ;
+  @XmlElement(name = "receiver")
+  private String receiver ;
 
 
 
   /**
    * Sets the peer to peer hash and message of the chat.
    * */
-  public void set_msg(String a, String b, String c){
+  public void set_msg(String senders, String a, String b, String c){
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
     LocalDateTime now = LocalDateTime.now();
     this.time = dtf.format(now);
     this.mhash = a;
     this.msg = b;
-    this.sender = c;
+    this.receiver = c;
+    this.sender = senders;
   }
 }
