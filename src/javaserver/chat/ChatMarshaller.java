@@ -7,10 +7,10 @@ import java.io.StringReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.*;
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.Unmarshaller;
 
 
 public class ChatMarshaller {
@@ -68,6 +68,18 @@ public class ChatMarshaller {
     print_marshall(a);
     Chat b = get_chat_from_file(locat_file);
     System.out.println("///////////// SECOND MARSHAL /////////////////");
+    print_marshall(b);
+
+  }
+
+  /**
+   * Only be called after reader_test() has been called.
+   * 
+   * */
+  public static void reader_test2() throws JAXBException,FileNotFoundException { 
+    String locat_file = "C:\\Users\\18604\\Desktop\\net\\test_bed\\chat\\target\\user.xml";
+    Chat b = get_chat_from_file(locat_file);
+    System.out.println("///////////// THIRD MARSHAL /////////////////");
     print_marshall(b);
 
   }
